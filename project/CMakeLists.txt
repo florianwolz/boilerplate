@@ -9,8 +9,6 @@ ADD_COMPILE_OPTIONS(-O3)
 # Add the packages
 ADD_SUBDIRECTORY(module)
 
-MESSAGE(STATUS ${PROJECT_SOURCES})
-
 # Compile the libaries into one
 ADD_LIBRARY(libproject ${PROJECT_SOURCES})
 
