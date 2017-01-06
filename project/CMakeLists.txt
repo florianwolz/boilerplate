@@ -1,5 +1,5 @@
-# Neptune
-# (c) 2016 by Aurora Finance Inc.
+# Project
+# (c) 2016 by Florian Wolz
 # All rights reserved.
 
 # Set compiler flags
@@ -8,6 +8,8 @@ ADD_COMPILE_OPTIONS(-O3)
 
 # Add the packages
 ADD_SUBDIRECTORY(module)
+
+MESSAGE(STATUS ${PROJECT_SOURCES})
 
 # Compile the libaries into one
 ADD_LIBRARY(libproject ${PROJECT_SOURCES})
